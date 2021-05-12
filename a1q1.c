@@ -1,18 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    float attackSpeed = 0.0;
-    int damagePerHit = 0;
-    double globalDamageMultiplier = 0.0;
+    float pi = 3.14159265;
+    float radius;
 
-    printf("Enter the number of attacks per second you make: ");
-    scanf("%f", &attackSpeed);
+    printf("Enter the radius: \n");
+    scanf("%f", &radius);
 
-    printf("Enter the amount of damage you do with each hit: ");
-    scanf("%d", &damagePerHit);
-
-    printf("Enter your global damage multiplier: ");
-    scanf("%lf", &globalDamageMultiplier);
-
-    printf("You will do %.2f damage per second to enemies.\n", attackSpeed * damagePerHit * globalDamageMultiplier);
+    printf("The surface area of the sphere is %.2f. \n", 4 * radius * radius);
+    printf("The volume of the sphere is %.2f. \n", (4 * pi * radius * radius * radius) / 3);
 }
