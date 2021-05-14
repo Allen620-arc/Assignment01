@@ -1,4 +1,4 @@
 Enter the radius:
-10
-The surface area of the sphere is 400.00.
-The volume of the sphere is 4188.79.
+1
+The surface area of the sphere is 12.57.
+The volume of the sphere is 4.19.

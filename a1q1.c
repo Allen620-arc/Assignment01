@@ -7,6 +7,6 @@ int main() {
     printf("Enter the radius: \n");
     scanf("%f", &radius);
 
-    printf("The surface area of the sphere is %.2f. \n", 4 * radius * radius);
+    printf("The surface area of the sphere is %.2f. \n", 4 * pi * radius * radius);
     printf("The volume of the sphere is %.2f. \n", (4 * pi * radius * radius * radius) / 3);
 }
