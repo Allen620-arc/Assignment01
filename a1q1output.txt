@@ -1,3 +1,7 @@
+Name: Allen Keettikkal
+NSID: alk423
+Student Number: 11278995
+
 Enter the radius:
 1
 The surface area of the sphere is 12.57.
