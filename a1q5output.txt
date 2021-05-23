@@ -1,0 +1,14 @@
+Input a number a number:
+10
+Reached the number 1 after 6 steps.
+Maximum n was 16.
+
+Enter a number:
+5
+Reached the number 1 after 5 steps.
+Maximum n was 16.
+
+Enter a number:
+15
+Reached the number 1 after 17 steps.
+Maximum n was 160.

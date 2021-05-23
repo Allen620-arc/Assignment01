@@ -5,6 +5,7 @@
  */
 
 #include <stdio.h>
+#include <windef.h>
 
 int collatz(int n) {
     if (n % 2 == 0) {
@@ -18,11 +19,17 @@ int collatz(int n) {
 
 int run_collatz(int n) {
     int steps = 0;
+    int max_n = 0;
     while (n > 1) {
+        int prev_n = n;
         n = collatz(n);
+        if (max_n < prev_n) {
+            max_n = prev_n;
+        }
         steps += 1;
     }
-    printf("Reached the number 1 after %d steps", steps);
+    printf("Reached the number 1 after %d steps. \n", steps);
+    printf("Maximum n was %d. \n", max_n);
 }
 
 int main() {
