@@ -5,7 +5,6 @@
  */
 
 #include <stdio.h>
-#include <windef.h>
 
 int collatz(int n) {
     if (n % 2 == 0) {
