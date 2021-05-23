@@ -13,16 +13,16 @@ int collatz(int n) {
     else {
         n = 3 * n + 1;
     }
-    return 0;
+    return n;
 }
 
 int run_collatz(int n) {
     int steps = 0;
-    if (n > 1) {
-        collatz(n);
+    while (n > 1) {
+        n = collatz(n);
         steps += 1;
     }
-    printf("The value received was %d after %d steps\n", n, steps);
+    printf("Reached the number 1 after %d steps", steps);
 }
 
 int main() {
@@ -32,5 +32,6 @@ int main() {
     scanf("%d", &num);
 
     collatz(num);
+    run_collatz(num);
     return 0;
 }
